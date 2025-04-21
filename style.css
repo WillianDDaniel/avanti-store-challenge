@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito sans", sans-serif;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.discount-container {
+  background-color: #005CFF;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+}
+
+.discount-container .discount-amount {
+  font-weight: 700;
+  background: #6220C1;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+
+.discount-container .discount-code {
+  font-style: italic;
+}
+
+.top-header .middle-header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.logo-search-container {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.logo-search-container .logo {
+  width: 152.58px;
+  height: 27.08px;
+}
+
+.logo-search-container .search-input {
+  width: 420px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #D4D4D4;
+  border-radius: 8px;
+  padding: 0 10px;
+  background-image: url('assets/images/magnifying-glass.png');
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 18px 18px;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.user-greeting {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.user-greeting .user-name {
+  line-height: 1.2;
+}
+
+.shopping-cart {
+  position: relative;
+  margin-top: 7px;
+}
+
+.shopping-cart .cart-count {
+  position: absolute;
+  top: -8px;
+  right: -14px;
+  background-color: #005CFF;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  box-shadow: 0 0 0 2px #FFFFFF;
+}
+
+.top-header .header-nav {
+  width: 75%;
+  margin-bottom: 10px;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 13px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.all-categories {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 330px;
+  background-color: #E7E7EA;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15), transparent);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hero-container {
+  width: 75%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.hero-container img {
+  height: 330px;
+  mix-blend-mode: darken;
+}
+
+.hero-text * {
+  font-family: "Nunito", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 65px;
+}
+
+.hero-title span {
+  font-weight: 300;
+}
+
+.hero-subtitle {
+  font-weight: 700;
+  color: #005CFF;
+  letter-spacing: 5px;
+}
+
+.hero-subtitle span {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 2;
+  letter-spacing: 0;
+}
