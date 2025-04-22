@@ -82,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
       track.style.transition = 'none';
       track.style.transform  = `translateX(-${cardWidth}px)`;
 
-      // Forçar reflow
       track.getBoundingClientRect();
 
       track.style.transition = 'transform 0.4s ease';
