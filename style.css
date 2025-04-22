@@ -381,14 +381,14 @@
   box-shadow: 0px 3px 4px 0px #00000040;
 }
 
-.best-sellers {
+.media-text {
   width: 70%;
   min-height: 85%;
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 }
 
-.best-sellers .banner {
+.media-text .banner {
   background-color: #C2C2C2;
   width: 55%;
   height: 85vh;
@@ -397,25 +397,54 @@
   align-items: center;
 }
 
-.best-sellers .cup {
+.media-text .left-cup {
   width: 95%;
   transform: rotate(7.54);
   margin-left: -32.62px;
 }
 
-.best-sellers-content {
+.media-text .right-cup {
+  width: 100%;
+}
+
+.media-text-content {
   width: 45%;
   height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 22px;
-  margin-left: 30px;
   line-height: 140%;
+}
+
+.media-text-reversed {
+  background-color: #DEDEDE;
+  width: 100%;
+  padding: 4% 15%;
+}
+
+.media-text-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.media-text-items img {
+  width: 90px;
+  height: 90px;
+}
+
+.right-content {
+  margin-left: 30px;
   margin-top: 10px;
 }
 
-.best-sellers-content h2 {
+.left-content {
+  margin-right: 45px;
+}
+
+.right-content h2 {
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -424,7 +453,7 @@
   color: #000000;
 }
 
-.best-sellers-content p {
+.right-content p {
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -432,3 +461,22 @@
   color: #000000;
 }
 
+.left-content h2 {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: 4%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4F4F4F;
+}
+
+.left-content p {
+  font-family: "Nunito";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: 5%;
+  color: #4F4F4F;
+}
