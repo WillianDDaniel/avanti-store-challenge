@@ -482,17 +482,29 @@
 }
 
 .banner-section {
+  position: relative;
   width: 100%;
   height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+.banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/images/avanti-lounge.png");
   background-size: cover;
   background-position: top 52% left 50%;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 100px;
-  backdrop-filter: blur(4px);
+  filter: blur(2px);
+  z-index: -1;
 }
 
 .banner-section .banner-text {
@@ -508,4 +520,83 @@
   line-height: 140%;
   letter-spacing: 0%;
   color: #FFFFFF;
+}
+
+.news-letter {
+  width: 75%;
+  margin-bottom: 100px;
+}
+
+.news-letter h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.news-letter h2 span {
+  color: #005CFF;
+}
+
+.news-letter-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #DEDEDE;
+  height: 176px;
+  border-radius: 8px;
+  padding: 0 20px;
+}
+
+.name-input, .email-input {
+  width: 200px;
+  height: 48px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding: 0 15px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #656565;
+}
+
+.checkbox-input {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #DDDDDD;
+}
+
+.checkbox-container a {
+  text-decoration: underline;
+  text-decoration-style: solid;
+  offset: 0%;
+  text-decoration-thickness: 0%;
+  color: #656565;
+}
+
+.news-letter-form button {
+  width: 121px;
+  height: 48px;
+  font-size: 16px;
+  border-radius: 8px;
+  padding-top: 14px;
+  padding-right: 24px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  background-color: #005CFF;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
 }
