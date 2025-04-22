@@ -48,42 +48,45 @@ function createCard(prod) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const track   = document.querySelector('.carousel-track');
-  const prevBtn = document.querySelector('.carousel-btn.prev');
-  const nextBtn = document.querySelector('.carousel-btn.next');
+  const carousels = document.querySelectorAll('.carousel-container');
 
-  products.forEach(prod => track.appendChild(createCard(prod)));
+  carousels.forEach(carousel => {
+    const track   = carousel.querySelector('.carousel-track');
+    const prevBtn = carousel.querySelector('.carousel-btn.prev');
+    const nextBtn = carousel.querySelector('.carousel-btn.next');
 
-  nextBtn.addEventListener('click', () => {
-    const firstCard = track.firstElementChild;
-    const cardWidth = firstCard.getBoundingClientRect().width;
+    products.forEach(prod => track.appendChild(createCard(prod)));
 
-    track.style.transition = 'transform 0.4s ease';
-    track.style.transform  = `translateX(-${cardWidth}px)`;
+    nextBtn.addEventListener('click', () => {
+      const firstCard = track.firstElementChild;
+      const cardWidth = firstCard.getBoundingClientRect().width;
 
-    track.addEventListener('transitionend', function handler() {
+      track.style.transition = 'transform 0.4s ease';
+      track.style.transform  = `translateX(-${cardWidth}px)`;
+
+      track.addEventListener('transitionend', function handler() {
+        track.style.transition = 'none';
+        track.appendChild(firstCard);
+        track.style.transform  = 'translateX(0)';
+        track.removeEventListener('transitionend', handler);
+      });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      const firstCard = track.firstElementChild;
+      const lastCard  = track.lastElementChild;
+      const cardWidth = firstCard.getBoundingClientRect().width;
+
+      track.insertBefore(lastCard, firstCard);
+
       track.style.transition = 'none';
-      track.appendChild(firstCard);
+      track.style.transform  = `translateX(-${cardWidth}px)`;
+
+      // Forçar reflow
+      track.getBoundingClientRect();
+
+      track.style.transition = 'transform 0.4s ease';
       track.style.transform  = 'translateX(0)';
-      track.removeEventListener('transitionend', handler);
     });
   });
-
-  prevBtn.addEventListener('click', () => {
-    const firstCard = track.firstElementChild;
-    const lastCard  = track.lastElementChild;
-    const cardWidth = firstCard.getBoundingClientRect().width;
-
-    track.insertBefore(lastCard, firstCard);
-
-    track.style.transition = 'none';
-    track.style.transform  = `translateX(-${cardWidth}px)`;
-
-    track.getBoundingClientRect();
-
-    track.style.transition = 'transform 0.4s ease';
-    track.style.transform  = 'translateX(0)';
-  });
 });
-
-
