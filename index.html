@@ -76,12 +76,12 @@
     </div>
 
     <nav class="header-nav">
-      <ul>
-        <li class="all-categories">
+      <ul class="main-nav">
+        <li class="all-categories" id="dropdownBtn">
           <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line x1="1" y1="6" x2="13" y2="6" stroke="black" stroke-width="2" stroke-linecap="round" />
-            <line x1="1" y1="11" x2="13" y2="11" stroke="black" stroke-width="2" stroke-linecap="round" />
-            <line x1="1" y1="1" x2="13" y2="1" stroke="black" stroke-width="2" stroke-linecap="round" />
+            <line x1="1" y1="6" x2="13" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="1" y1="11" x2="13" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            <line x1="1" y1="1" x2="13" y2="1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
           </svg>
 
           Todas as Categorias
@@ -96,6 +96,33 @@
         <li>Departamento</li>
         <li>Departamento</li>
       </ul>
+
+      <div class="dropdown-menu" id="dropdownMenu">
+        <div class="side-menu-container">
+          <ul class="dropdown-side-options" id="dropdownSideOptions"></ul>
+        </div>
+
+        <div class="categories-container">
+          <div class="dropdown-categories"></div>
+          <div class="dropdown-categories"></div>
+          <div class="dropdown-categories"></div>
+        </div>
+
+        <div class="dropdown-cta">
+          <div class="dropdown-cta-text">
+            <p>
+              Confira os
+              Produtos
+              <span>
+                Que acabaram
+                De chegar
+              </span>
+            </p>
+
+            <button>Ver todos</button>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
 
