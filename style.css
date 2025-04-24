@@ -131,6 +131,25 @@
   user-select: none;
 }
 
+.menu-option {
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-option:hover {
+  color: #005CFF;
+}
+
+.menu-option-title {
+  width: 100%;
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  margin-bottom: -10px;
+}
+
 .dropdown-menu {
   position: absolute;
   z-index: 10;
@@ -141,6 +160,7 @@
   height: 300px;
   margin-top: 10px;
   display: none;
+  flex-wrap: wrap;
 }
 
 .side-menu-container {
