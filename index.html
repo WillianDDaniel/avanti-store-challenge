@@ -20,6 +20,7 @@
     rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
 
   <title>Avanti Store</title>
 </head>
@@ -29,6 +30,8 @@
     <aside class="discount-container">
       <p>
         Ganhe <span class="discount-amount">R$10,00</span> de desconto no seu primeiro pedido.
+      </p>
+      <p>
         Utilize o cupom <span class="discount-code">DESCONTO10</span>
       </p>
     </aside>
@@ -39,10 +42,12 @@
           <img class="logo" src="./assets/images/avanti-logo.png" alt="Avanti">
         </a>
 
-        <input class="search-input" id="searchInput" type="text" placeholder="Digite aqui o que você procura">
-        <button class="search-icon" id="searchIcon">
-          <img src="./assets/images/magnifying-glass.png" alt="Buscar">
-        </button>
+        <div class="search-container">
+          <input class="search-input" id="searchInput" type="text" placeholder="Digite aqui o que você procura">
+          <button class="search-icon" id="searchIcon">
+            <img src="./assets/images/magnifying-glass.png" alt="Buscar">
+          </button>
+        </div>
       </div>
 
       <div id="searchModal" class="modal hidden">
@@ -82,6 +87,13 @@
             2
           </div>
         </div>
+
+        <svg class="menu-icon" id="menuIcon" width="14" height="12" viewBox="0 0 14 12" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <line x1="1" y1="6" x2="13" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <line x1="1" y1="11" x2="13" y2="11" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <line x1="1" y1="1" x2="13" y2="1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
       </div>
     </div>
 

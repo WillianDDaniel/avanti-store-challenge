@@ -105,9 +105,11 @@ function setupCarousels() {
 }
 
 function setupDropdownToggle() {
-  dropdownBtn.addEventListener('click', () => {
+  document.getElementById('dropdownBtn').addEventListener('click', function (e) {
+    e.stopPropagation();
+
     const isOpen = dropdownMenu.classList.contains('dropdown-menu--active');
-    const isSelected = dropdownBtn.dataset.selected === 'true';
+    const isSelected = this.dataset.selected === 'true';
 
     menuOptions.forEach(opt => {
       delete opt.dataset.selected;
@@ -115,15 +117,15 @@ function setupDropdownToggle() {
     });
 
     if (isOpen && isSelected) {
-      dropdownBtn.style.color = '#000';
+      this.style.color = '#000';
       dropdownMenu.classList.remove('dropdown-menu--active');
-      dropdownBtn.dataset.selected = "false";
+      this.dataset.selected = "false";
       return;
     }
 
     dropdownMenu.classList.add('dropdown-menu--active');
-    dropdownBtn.style.color = '#005CFF';
-    dropdownBtn.dataset.selected = "true";
+    this.style.color = '#005CFF';
+    this.dataset.selected = "true";
     menuOptionTitle.style.display = "none";
     dropdownSideOptions.style.display = "flex";
   });

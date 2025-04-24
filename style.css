@@ -24,6 +24,7 @@
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0%;
+  gap: 3px;
 }
 
 .discount-container .discount-amount {
@@ -171,13 +172,17 @@
   box-shadow: 0 0 0 2px #FFFFFF;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .top-header .header-nav {
   width: 75%;
   margin-bottom: 10px;
   position: relative;
 }
 
-.header-nav .main-nav {
+.main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
