@@ -110,6 +110,28 @@
     line-height: 1.8;
     font-size: 35px;
   }
+
+  .new-arrivals {
+    width: 90%;
+  }
+
+  .carousel-container {
+    overflow: auto;
+    margin-bottom: 100px;
+    scrollbar-width: none;
+  }
+
+  .new-arrivals .card {
+    flex: 0 0 49%;
+  }
+
+  .carousel-btn {
+    display: none;
+  }
+
+  .media-text {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 380px) {
