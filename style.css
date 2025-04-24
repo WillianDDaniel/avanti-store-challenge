@@ -410,9 +410,10 @@
   gap: 25px;
 }
 
-.hero-container img {
+.hero-container .hero-image img {
   height: 330px;
   mix-blend-mode: darken;
+  margin-top: 5px;
 }
 
 .hero-text * {
