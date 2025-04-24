@@ -30,6 +30,7 @@ const dropdownSideOptions = document.getElementById('dropdownSideOptions');
 const menuOptions = document.querySelectorAll('.menu-option');
 const categoryContainers = document.querySelectorAll('.dropdown-categories');
 const carousels = document.querySelectorAll('.carousel-container');
+const searchIcon = document.getElementById('searchIcon');
 
 function createProductCard(prod) {
   const article = document.createElement('article');
@@ -204,9 +205,35 @@ function setupGlobalClose() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       closeDropdown();
+      closeModal();
     }
   });
 }
+
+function openModal() {
+  const input = document.getElementById('searchInput');
+  const term = input.value.trim();
+
+  if (term === '') {
+    input.focus();
+    input.classList.add('input-error');
+    return;
+  }
+
+  input.classList.remove('input-error');
+
+  document.getElementById('searchResultText').innerHTML = `<b>Voce buscou por:</b> ${term}`;
+  document.getElementById('searchModal').classList.remove('hidden');
+}
+
+function closeModal() {
+  document.getElementById('searchModal').classList.add('hidden');
+  const input = document.getElementById('searchInput');
+  input.value = '';
+}
+
+document.getElementById('searchIcon').addEventListener('click', openModal);
+document.getElementById('closeModal').addEventListener('click', closeModal);
 
 document.addEventListener('DOMContentLoaded', () => {
   setupDropdownToggle();

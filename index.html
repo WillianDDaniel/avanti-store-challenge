@@ -39,7 +39,17 @@
           <img class="logo" src="./assets/images/avanti-logo.png" alt="Avanti">
         </a>
 
-        <input class="search-input" type="text" placeholder="Digite aqui o que você procura">
+        <input class="search-input" id="searchInput" type="text" placeholder="Digite aqui o que você procura">
+        <button class="search-icon" id="searchIcon">
+          <img src="./assets/images/magnifying-glass.png" alt="Buscar">
+        </button>
+      </div>
+
+      <div id="searchModal" class="modal hidden">
+        <div class="modal-content">
+          <button class="close-btn" id="closeModal">X</button>
+          <p id="searchResultText"></p>
+        </div>
       </div>
 
       <div class="user-container">
@@ -302,17 +312,17 @@
     <section class="news-letter">
       <h2>Cadastre-se na nossa <span>newsletter</span></h2>
 
-      <div class="news-letter-form">
-        <input class="name-input" type="text" placeholder="Digite seu nome">
-        <input class="email-input" type="text" placeholder="Digite seu e-mail">
+      <form class="news-letter-form">
+        <input class="name-input" type="text" placeholder="Digite seu nome" required>
+        <input class="email-input" type="text" placeholder="Digite seu e-mail" required>
 
         <div class="checkbox-container">
-          <input class="checkbox-input" type="checkbox">
+          <input class="checkbox-input" type="checkbox" required>
           <p>Estou de acordo com a <a href="#">Política de Privacidade</p></a>
         </div>
 
-        <button>Cadastrar</button>
-      </div>
+        <button type="submit">Cadastrar</button>
+      </form>
     </section>
   </main>
 
