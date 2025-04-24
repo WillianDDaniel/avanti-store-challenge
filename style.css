@@ -897,11 +897,22 @@
 
 .footer-nav .social-media {
   padding-left: 10px;
+  width: 29%;
 }
 
-.footer-nav .helper-center,
-.footer-nav .service,
-.footer-nav .institutional {
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 69.9%;
+}
+
+.footer-content .arrow-icon {
+  display: none;
+}
+
+.helper-center,
+.service,
+.institutional {
   padding-right: 5px;
 }
 
