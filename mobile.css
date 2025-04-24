@@ -1,3 +1,17 @@
+@media screen and (max-width: 1024px) {
+  .main-nav li {
+    margin: 0 10px;
+  }
+
+  .media-text-reversed {
+    height: auto;
+  }
+
+  .media-text-content {
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 840px) {
   .top-header {
     margin-bottom: -10px;
@@ -368,6 +382,10 @@
   .hero-subtitle {
     font-size: 12px;
   }
+
+  .footer-logos {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 280px) {
@@ -453,9 +471,5 @@
     width: auto;
     max-width: 95%;
     height: auto;
-  }
-
-  .footer-logos {
-    flex-wrap: wrap;
   }
 }

@@ -49,7 +49,8 @@
   align-items: center;
   gap: 35px;
   position: relative;
-  width: fit-content;
+  width: 605px;
+  margin-right: 10px;
 }
 
 .logo-search-container .logo {
@@ -57,8 +58,13 @@
   height: 27.08px;
 }
 
+.search-container {
+  display: flex;
+  width: 100%;
+}
+
 .search-input {
-  width: 420px;
+  flex-grow: 1;
   height: 30px;
   outline: none;
   border: 1px solid #D4D4D4;
@@ -147,6 +153,11 @@
   line-height: 22px;
 }
 
+.user-icon {
+  min-width: 21px;
+  min-height: 24px;
+}
+
 .user-greeting .user-name {
   line-height: 1.2;
 }
@@ -190,6 +201,7 @@
   font-size: 13px;
   line-height: 22px;
   white-space: nowrap;
+  flex-wrap: wrap;
 }
 
 .all-categories {
@@ -204,6 +216,7 @@
 .menu-option {
   cursor: pointer;
   user-select: none;
+  padding: 0 10px;
 }
 
 .menu-option:hover {
@@ -227,7 +240,8 @@
   background-color: #FFFFFF;
   width: calc(100% + 4px);
   left: -2px;
-  height: 300px;
+  min-height: 300px;
+  height: auto;
   margin-top: 10px;
   display: none;
   flex-wrap: wrap;
@@ -323,6 +337,7 @@
   background-repeat: no-repeat;
   background-position: top 50% left 60%;
   width: 230px;
+  min-height: 280px;
   margin-left: auto;
   margin-bottom: -5px;
   z-index: 0;
