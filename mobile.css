@@ -133,9 +133,13 @@
     width: 90%;
   }
 
+  .carousel-wrapper {
+    margin-bottom: 80px;
+  }
+
   .carousel-container {
     overflow: auto;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
     scrollbar-width: none;
   }
 

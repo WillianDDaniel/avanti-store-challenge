@@ -500,11 +500,12 @@
 
 .carrousel-wrapper {
   position: relative;
+  margin-bottom: 80px;
 }
 
 .carousel-container {
   overflow: hidden;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 
 .carousel-track {
@@ -647,6 +648,25 @@
 .next {
   right: -13px;
   box-shadow: 0px 3px 4px 0px #00000040;
+}
+
+.circle-status-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.circle-status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #838383;
+  cursor: pointer;
+}
+
+.circle-status-container .circle-status:first-child {
+  background-color: #303030;
 }
 
 .media-text {
