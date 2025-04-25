@@ -289,6 +289,12 @@
 
   .footer-content ul {
     display: none;
+    margin-left: 20px;
+    user-select: none;
+  }
+
+  .footer-content h5:hover {
+    color: #005CFF;
   }
 
   .footer-content {
@@ -314,6 +320,7 @@
     align-items: center;
     margin-bottom: 0;
     padding: 10px 15px 10px 10px;
+    user-select: none;
   }
 
   .footer-content .arrow-icon {

@@ -237,6 +237,21 @@ function closeModal() {
 document.getElementById('searchIcon').addEventListener('click', openModal);
 document.getElementById('closeModal').addEventListener('click', closeModal);
 
+document.getElementById('institutionalBtn').addEventListener('click', (e) => {
+  const list = document.getElementById('institutionalList')
+  list.style.display = list.style.display === 'none' ? 'block' : 'none';
+});
+
+document.getElementById('helpCenterBtn').addEventListener('click', (e) => {
+  const list = document.getElementById('helpCenterList')
+  list.style.display = list.style.display === 'none' ? 'block' : 'none';
+});
+
+document.getElementById('serviceBtn').addEventListener('click', (e) => {
+  const list = document.getElementById('serviceList')
+  list.style.display = list.style.display === 'none' ? 'block' : 'none';
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   setupDropdownToggle();
   populateDropdownMenu();
