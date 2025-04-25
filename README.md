@@ -18,10 +18,6 @@ A implementação consiste em uma loja virtual com interface moderna e navegaç�
 ### Visão Geral
 ![Screenshot da Página Inicial](./assets/images/screenshots/image.png)
 
-### Funcionalidades em Ação
-<!-- ![Demonstração das funcionalidades](./assets/images/screenshots/demo.gif) -->
-- Em Breve
-
 ### [Acesse a versão online aqui](https://willianddaniel.github.io/avanti-store-challenge/)
 
 ## 🔧 Tecnologias Utilizadas
